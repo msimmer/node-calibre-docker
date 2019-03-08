@@ -5,15 +5,15 @@ ARG BUILD_DATE
 ARG VCS_REF
 ARG IMAGE_VERSION
 LABEL maintainer="maxwell.simmer@gmail.com" \
-    org.label-schema.build-date=$BUILD_DATE \
+    org.label-schema.build-date="$BUILD_DATE" \
     org.label-schema.name="node-calibre" \
     org.label-schema.description="A NodeJS v9 Docker image with calibre" \
     org.label-schema.url="https://maxwellsimmer.com/" \
-    org.label-schema.vcs-ref=$VCS_REF \
-    org.label-schema.vcs-url=$VCS_URL \
-    org.label-schema.license=$LICENSE \
+    org.label-schema.vcs-ref="$VCS_REF" \
+    org.label-schema.vcs-url="$VCS_URL" \
+    org.label-schema.license="$LICENSE" \
     org.label-schema.vendor="Maxwell Simmer" \
-    org.label-schema.version=$IMAGE_VERSION \
+    org.label-schema.version="$IMAGE_VERSION" \
     org.label-schema.schema-version="1.0"
 
 ENV CALIBRE_SOURCE_URL https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py
